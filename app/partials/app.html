@@ -26,7 +26,7 @@
                 <ul class="list-unstyled">
                 <!-- Note 4 -->
                     <li>
-                        <span class="label label-primary">genere</span>
+                        <span class="label label-primary" ng-repeat="(genre, state) in book.genres" ng-show="state">{{genre}}</span>
                     </li>
                 </ul>
             
