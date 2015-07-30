@@ -19,10 +19,9 @@
 
       <p>{{reviewFormCtrl.book.review}}</p>
       
-        <!-- no, no! <book-cover></book-cover> -->
       <ul class="list-unstyled">
-        <li>
-          <span class="label label-primary">genre</span>
+        <li ng-repeat="(genre, state) in reviewFormCtrl.book.genres">
+          <span class="label label-primary" ng-show="state">{{genre}}</span>
         </li>
       </ul>
     </div>
