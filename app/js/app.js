@@ -31,7 +31,7 @@ angular.module('readingList', [])
       controller: function(){
         this.showForm = false;
       },
-      controllerAs: 'reviewformCtrl'
+      controllerAs: 'reviewFormCtrl'
     }
   });
     
